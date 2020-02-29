@@ -1,7 +1,5 @@
 #include "Papyrus.h"
 
-#include "skse64/GameReferences.h"
-
 #include "RE/Skyrim.h"
 #include "REL/Relocation.h"
 
@@ -60,7 +58,7 @@ namespace Papyrus
 
 			auto msgQ = RE::UIMessageQueue::GetSingleton();
 			if (msgQ) {
-				msgQ->AddMessage(intfcStr->console, Message::kReshow, consoleData);
+				msgQ->AddMessage(intfcStr->console, Message::kUpdate, consoleData);
 			}
 		} else {
 			auto ui = RE::UI::GetSingleton();

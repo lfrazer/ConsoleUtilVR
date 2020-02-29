@@ -1,5 +1,7 @@
 #include "Events.h"
 
+#include <memory>
+
 #include "RE/Skyrim.h"
 
 
@@ -8,11 +10,11 @@ namespace Events
 	MenuOpenCloseEventHandler* MenuOpenCloseEventHandler::GetSingleton()
 	{
 		static MenuOpenCloseEventHandler singleton;
-		return &singleton;
+		return std::addressof(singleton);
 	}
 
 
-	auto MenuOpenCloseEventHandler::ProcessEvent(const RE::MenuOpenCloseEvent* a_event, RE::BSTEventSource<RE::MenuOpenCloseEvent>* a_eventSource)
+	auto MenuOpenCloseEventHandler::ProcessEvent(const RE::MenuOpenCloseEvent* a_event, [[maybe_unused]] RE::BSTEventSource<RE::MenuOpenCloseEvent>* a_eventSource)
 		-> EventResult
 	{
 		using Message = RE::UI_MESSAGE_TYPE;
