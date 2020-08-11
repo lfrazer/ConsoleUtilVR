@@ -8,6 +8,7 @@
 #include "SKSE/SKSE.h"
 
 #include <memory>
+#include <string>
 #include <typeinfo>
 
 #ifndef NDEBUG
