@@ -1,24 +1,23 @@
 #pragma once
 
+#include "ForceInclude.h"
 #include "RE/Skyrim.h"
 #include "REL/Relocation.h"
+#ifndef SKYRIMVR
 #include "SKSE/SKSE.h"
+#else
+#include "SKSE/Logger.h"
+#endif
 
 #include "RE/Skyrim.h"
-#include "SKSE/SKSE.h"
+
 
 #include <memory>
 #include <string>
 #include <typeinfo>
 
-#ifdef NDEBUG
-#include <spdlog/sinks/basic_file_sink.h>
-#else
-#include <spdlog/sinks/msvc_sink.h>
-#endif
 
 using namespace std::literals;
 
-namespace logger = SKSE::log;
 
 #define DLLEXPORT __declspec(dllexport)

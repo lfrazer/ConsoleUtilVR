@@ -87,7 +87,7 @@ namespace Papyrus
 			a_vm->RegisterFunction("PrintMessage", CLASS_NAME, PrintMessage);
 			a_vm->RegisterFunction("GetVersion", CLASS_NAME, GetVersion);
 
-			logger::info("Registered funcs for class {}", CLASS_NAME);
+			_MESSAGE("Registered funcs for class %s", CLASS_NAME);
 
 			return true;
 		}

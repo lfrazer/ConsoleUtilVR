@@ -17,7 +17,7 @@ namespace Events
 			const auto ui = RE::UI::GetSingleton();
 			if (ui) {
 				ui->AddEventSink(GetSingleton());
-				logger::info("Registered {}"sv, typeid(MenuOpenCloseEventHandler).name());
+				_MESSAGE("Registered Event Handler: %s", typeid(MenuOpenCloseEventHandler).name());
 			}
 		}
 

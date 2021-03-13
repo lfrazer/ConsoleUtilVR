@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30404.54
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleUtilSSE", "ConsoleUtilSSE.vcxproj", "{D1226761-DA49-4F03-B4A1-58B75EEB820D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonLibSSE", "%CommonLibSSEPath%\CommonLibSSE.vcxproj", "{3E4B6EF3-EC6E-46CF-9003-EEB57A258B82}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonLibVR", "%CommonLibVRPath%\CommonLibVR.vcxproj", "{3E4B6EF3-EC6E-46CF-9003-EEB57A258B82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
