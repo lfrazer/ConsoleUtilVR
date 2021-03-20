@@ -7,7 +7,10 @@
 * [SKSE64](https://skse.silverlock.org/)
 
 ## Mod Page
-[Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47189)
+* [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/47189)
+
+## Build Instructions
+* Define an environment variable "CommonLibVRPath" that points to your CommonLibVR project root folder
 
 ## Credits
 * Ryan
